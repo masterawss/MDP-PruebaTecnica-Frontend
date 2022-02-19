@@ -1,3 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .table{
+    @apply min-w-full divide-y divide-gray-200 table-fixed 
+  }
+  .table thead{
+    @apply bg-gray-200 
+  }
+  .table th{
+    @apply py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase 
+  }
+  .table tbody{
+    @apply bg-white divide-y divide-gray-200 
+  }
+  .table tbody tr{
+    @apply hover:bg-gray-100 
+  }
+  .table tbody td{
+    @apply py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap 
+  }
+
+
+  .btn-primary{
+    @apply text-white  focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800
+  }
+
+  .item-menu{
+    @apply block pr-4 pl-3   border-gray-100  md:border-0  text-gray-400 hover:text-white 
+  }
+  .item-menu_active{
+    @apply text-blue-500
+  }
+  .card{
+    @apply bg-white shadow-md rounded
+  }
+  .input-field{
+    @apply w-full p-3 text-sm font-normal text-gray-600 bg-gray-100 border border-gray-300 rounded shadow  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 
+  }
+  .input-label{
+    @apply mb-2 text-sm font-bold leading-tight tracking-normal text-gray-400
+  }
+  .title{
+    @apply text-lg font-bold
+  }
+
+  .overlay{
+    @apply fixed inset-0 w-full h-full overflow-y-auto bg-gray-800 bg-opacity-50
+  }
+
+  body{
+    height: 100%;
+    @apply bg-gray-100
+  }
+}
+.bg-image{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
