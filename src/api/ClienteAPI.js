@@ -2,7 +2,7 @@
 import { toast } from 'react-toastify';
 
 // const API_URL = "http://localhost:4400/api/v1/"
-const API_URL = "https://mdp-prueba.herokuapp.com//api/v1/"
+const API_URL = "https://mdp-prueba.herokuapp.com/api/v1/"
 
 export const getAll = async () => {
     try {
